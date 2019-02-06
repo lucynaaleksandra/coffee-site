@@ -1,7 +1,9 @@
 footer {
   height: 40vh;
+  font-size: 12px;
 
   .la-footer__logo {
+    margin-top: 100px;
     height: 80px;
     background-image: url("/asset/logoDR.png");
     background-size: contain;
@@ -14,7 +16,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 25px 0;
 
     div:nth-child(2) {
       margin-bottom: 20px;
@@ -26,13 +28,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 50px;
-
-    .la-footer__rights {
-      // > div {
-      //   word-spacing: 5px;
-      //   letter-spacing: 3px;
-      // }
-    }
 
     .la-footer__social {
       a i {
