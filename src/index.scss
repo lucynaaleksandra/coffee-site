@@ -3,8 +3,6 @@
 
 @import "./layout/index.scss";
 @import "./util/variables.scss";
-// @import "./util/mediaq.scss";
-// @import "./util/animations.scss";
 
 * {
   box-sizing: border-box;
@@ -15,7 +13,6 @@ body {
   padding: 0;
   width: 100vw;
   min-height: 100vh;
-  // font-family: "Noto Serif SC", serif;
   font-family: "Fahkwang", sans-serif;
   overflow-x: hidden;
   color: $color-dark-grey;

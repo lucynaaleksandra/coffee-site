@@ -1,4 +1,5 @@
 @import "../util/mediaq";
+@import "../util/animations";
 
 header {
   margin: 0;
@@ -36,6 +37,12 @@ header {
     h4 {
       font-size: 14px;
       font-weight: 300;
+      opacity: 0;
+      animation: fade-up 3000ms $easeOutBack 500ms forwards;
+    }
+    h1 {
+      opacity: 0;
+      animation: fade-up 3000ms $easeOutBack 900ms forwards;
     }
     p {
       font-size: 11px;
@@ -44,6 +51,12 @@ header {
     button {
       width: 130px;
       margin-top: 20px;
+    }
+
+    p,
+    button {
+      opacity: 0;
+      animation: fade-up 3000ms $easeOutBack 1300ms forwards;
     }
   }
 
@@ -82,6 +95,8 @@ header {
       display: flex;
       align-items: center;
       font-size: 11px;
+      opacity: 0;
+      animation: fade 3000ms $easeOutBack 500ms forwards;
 
       @include responsive-sm {
         justify-content: center;
@@ -101,6 +116,8 @@ header {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-size: 11px;
+    opacity: 0;
+    animation: fade 3000ms $easeOutBack 500ms forwards;
 
     @include responsive-sm {
       display: none;
