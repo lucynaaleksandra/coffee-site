@@ -8,7 +8,7 @@ nav {
   .la-nav__logo {
     width: 80px;
     height: 80px;
-    // margin-left: 50px;
+    margin-left: 50px;
     background-image: url("/asset/logoBR.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -20,7 +20,10 @@ nav {
     justify-content: center;
     align-items: center;
     width: 150px;
-    // padding-right: 10px;
-    // margin-right: 50px;
+    margin-right: 50px;
+
+    i {
+      padding-left: 15px;
+    }
   }
 }
