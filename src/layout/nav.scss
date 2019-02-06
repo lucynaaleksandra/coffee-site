@@ -3,21 +3,24 @@
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .la-nav__logo {
     width: 80px;
     height: 80px;
-    margin-left: 50px;
+    // margin-left: 50px;
     background-image: url("/asset/logoBR.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .la-nav__btn {
+  button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 50px;
+    width: 150px;
+    // padding-right: 10px;
+    // margin-right: 50px;
   }
 }

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 @import "./layout/index.scss";
 @import "./util/variables.scss";
 @import "./util/mediaq.scss";
@@ -15,6 +17,7 @@ body {
   min-height: 100vh;
   font-family: "Noto Serif SC", serif;
   // font-family: "Playfair Display", serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -51,6 +54,7 @@ a {
   color: $color-primary;
   background: white;
   outline: none;
+  cursor: pointer;
 }
 
 .la-btn--secondary {
@@ -58,4 +62,5 @@ a {
   color: white;
   background: $color-primary;
   outline: none;
+  cursor: pointer;
 }
