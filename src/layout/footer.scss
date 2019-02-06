@@ -1,0 +1,39 @@
+footer {
+  height: 40vh;
+
+  .la-footer__logo {
+    height: 80px;
+    background-image: url("/asset/logoDR.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .la-footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+    div:nth-child(2) {
+      margin-bottom: 20px;
+    }
+  }
+
+  div:last-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px;
+
+    .la-footer__rights {
+    }
+
+    .la-footer__social {
+      a i {
+        padding-left: 30px;
+      }
+    }
+  }
+}

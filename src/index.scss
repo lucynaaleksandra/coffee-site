@@ -50,17 +50,31 @@ a {
 }
 
 .la-btn--primary {
-  padding: 10px 20px;
-  color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-dark-grey;
   background: white;
+  border: none;
   outline: none;
   cursor: pointer;
+
+  i {
+    padding: 10px;
+  }
 }
 
 .la-btn--secondary {
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  background: $color-primary;
+  background: $color-dark-grey;
+  border: none;
   outline: none;
   cursor: pointer;
+
+  i {
+    padding: 10px;
+  }
 }

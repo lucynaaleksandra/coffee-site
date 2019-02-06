@@ -15,9 +15,6 @@ header {
     background: $color-dark-grey;
 
     button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 200px;
     }
   }
@@ -41,7 +38,6 @@ header {
     .la-header__location {
       display: flex;
       align-items: center;
-      // background: paleturquoise;
     }
   }
 

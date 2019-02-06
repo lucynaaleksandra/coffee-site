@@ -9,21 +9,20 @@ nav {
     width: 80px;
     height: 80px;
     margin-left: 50px;
-    background-image: url("/asset/logoBR.png");
+    background-image: url("/asset/logoDR.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    margin-right: 50px;
+  .la-nav__cta {
+    button {
+      width: 200px;
+      margin-right: 50px;
 
-    i {
-      padding-left: 15px;
+      i {
+        padding-left: 15px;
+      }
     }
   }
 }
