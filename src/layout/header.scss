@@ -1,8 +1,17 @@
+@import "../util/mediaq";
+
 header {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include responsive-sm {
+    flex-direction: column;
+  }
+  @include responsive-xs {
+    flex-direction: column;
+  }
 
   .la-header__content {
     width: 50%;
@@ -13,6 +22,15 @@ header {
     padding: 100px;
     color: $color-white;
     background: $color-dark-grey;
+
+    @include responsive-sm {
+      width: 100%;
+      height: auto;
+    }
+    @include responsive-xs {
+      width: 100%;
+      height: auto;
+    }
 
     button {
       width: 200px;
@@ -26,6 +44,13 @@ header {
     align-self: flex-start;
     flex: 1 0 auto;
 
+    @include responsive-sm {
+      width: 100%;
+    }
+    @include responsive-xs {
+      width: 100%;
+    }
+
     .la-header__img {
       width: 100%;
       height: 100%;
@@ -33,11 +58,25 @@ header {
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+
+      @include responsive-sm {
+        height: 95%;
+      }
+      @include responsive-xs {
+        height: 95%;
+      }
     }
 
     .la-header__location {
       display: flex;
       align-items: center;
+
+      @include responsive-sm {
+        justify-content: center;
+      }
+      @include responsive-xs {
+        justify-content: center;
+      }
     }
   }
 
@@ -48,6 +87,13 @@ header {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     padding: 10px;
-    background: palegreen;
+    // background: palegreen;
+
+    @include responsive-sm {
+      display: none;
+    }
+    @include responsive-xs {
+      display: none;
+    }
   }
 }
