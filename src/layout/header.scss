@@ -5,6 +5,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 300;
 
   @include responsive-sm {
     flex-direction: column;
@@ -32,8 +33,17 @@ header {
       height: auto;
     }
 
+    h4 {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    p {
+      font-size: 11px;
+      line-height: 1.8;
+    }
     button {
-      width: 200px;
+      width: 130px;
+      margin-top: 20px;
     }
   }
 
@@ -68,8 +78,10 @@ header {
     }
 
     .la-header__location {
+      height: 50px;
       display: flex;
       align-items: center;
+      font-size: 11px;
 
       @include responsive-sm {
         justify-content: center;
@@ -81,19 +93,28 @@ header {
   }
 
   .la-header__vertical {
+    height: 85vh;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-self: stretch;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    padding: 10px;
-    // background: palegreen;
+    font-size: 11px;
 
     @include responsive-sm {
       display: none;
     }
     @include responsive-xs {
       display: none;
+    }
+
+    .la-header__social {
+      font-size: 16px;
+
+      a i {
+        margin-top: 8px;
+      }
     }
   }
 }

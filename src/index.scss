@@ -31,7 +31,6 @@ h2 {
 }
 
 h4 {
-  // font-weight: 30px;
   font-weight: 400;
   word-spacing: 5px;
   letter-spacing: 3px;
@@ -60,32 +59,27 @@ a {
   cursor: pointer;
 }
 
-.la-btn--primary {
+.la-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color-dark-grey;
-  background: white;
+  padding: 5px;
+  font-size: 10px;
   border: none;
   outline: none;
   cursor: pointer;
 
-  i {
-    padding: 10px;
+  &--primary {
+    color: $color-dark;
+    background: white;
   }
-}
 
-.la-btn--secondary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background: $color-dark-grey;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  &--secondary {
+    color: white;
+    background: $color-dark;
+  }
 
   i {
-    padding: 10px;
+    padding-left: 10px;
   }
 }
