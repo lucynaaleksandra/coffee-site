@@ -1,0 +1,125 @@
+@import "../util/variables";
+
+.la-product {
+  padding: 100px 0 100px 150px;
+  position: relative;
+
+  @include responsive-xs {
+    padding: 100px 0 100px 50px;
+  }
+
+  .la-product__block {
+    width: 300px;
+    height: 1000px;
+    background: $color-dark-grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .la-product__content {
+    box-shadow: $box-shadow;
+    position: relative;
+    z-index: 2;
+
+    @include responsive-sm {
+      background: $color-white;
+    }
+    @include responsive-xs {
+      background: $color-white;
+    }
+
+    .la-product__header {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include will-animate-y;
+    }
+
+    .la-product__prod-menu {
+      display: flex;
+      flex-direction: column;
+      @include will-animate-y;
+
+      .la-product__side-img {
+        width: 15%;
+        height: auto;
+        position: absolute;
+        top: -140px;
+        right: 0;
+      }
+
+      .la-product__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        @include responsive-sm {
+          flex-direction: column;
+          margin-bottom: 50px;
+        }
+        @include responsive-xs {
+          flex-direction: column;
+          margin-bottom: 50px;
+        }
+
+        img {
+          width: 200px;
+        }
+
+        .la-product__desc {
+          padding: 0 50px;
+
+          p {
+            font-size: 12px;
+          }
+
+          @include responsive-xs {
+            margin-top: 10px;
+          }
+        }
+
+        .la-product__price {
+          width: 40%;
+          padding-right: 50px;
+
+          p {
+            font-size: 12px;
+          }
+
+          @include responsive-sm {
+            width: 80%;
+            p {
+              margin: 0;
+            }
+          }
+          @include responsive-xs {
+            width: 80%;
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .la-product__cta {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        width: 160px;
+        padding-left: 10px;
+
+        @include responsive-sm {
+          width: 40%;
+        }
+        @include responsive-xs {
+          width: 40%;
+        }
+      }
+    }
+  }
+}

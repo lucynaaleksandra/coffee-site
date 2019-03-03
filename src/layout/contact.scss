@@ -1,0 +1,71 @@
+.la-contact {
+  margin: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 0;
+  animation: fade 2000ms $easeOutBack 500ms forwards;
+
+  .la-contact__img-1 {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: -200px;
+    right: 0;
+  }
+  .la-contact__img-2 {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 450px;
+    left: 0;
+  }
+
+  .la-contact__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    opacity: 0;
+    animation: fade 2000ms $easeOutBack 900ms forwards;
+
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid $color-light-grey;
+      letter-spacing: 1px;
+      outline: none;
+    }
+
+    .la-contact__set {
+      display: flex;
+      justify-content: space-between;
+
+      > div:nth-child(1) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      > div:nth-child(2) {
+        margin-left: 5px;
+      }
+
+      i:nth-child(1) {
+        margin-right: 15px;
+      }
+    }
+
+    .la-contact__cta {
+      margin-top: 50px;
+
+      button {
+        width: 100%;
+        opacity: 0;
+        animation: fade 2000ms $easeOutBack 1300ms forwards;
+      }
+    }
+  }
+}

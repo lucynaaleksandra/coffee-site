@@ -1,0 +1,55 @@
+.la-insta {
+  display: flex;
+  flex-direction: column;
+  // @include will-animate-y;
+
+  @include responsive-sm {
+    align-items: center;
+  }
+  @include responsive-xs {
+    align-items: center;
+  }
+
+  > div:first-child {
+    padding: 0 100px;
+    @include will-animate-y(200ms);
+
+    h4 {
+      margin-top: 100px;
+    }
+
+    h2 {
+      margin-bottom: 60px;
+    }
+  }
+
+  .la-insta__img {
+    display: flex;
+    flex-direction: row;
+    @include will-animate-y(600ms);
+
+    @include responsive-sm {
+      align-items: center;
+    }
+    @include responsive-xs {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      height: 250px;
+      margin-right: 5px;
+
+      @include responsive-sm {
+        height: 25%;
+        width: 25%;
+        margin-bottom: 5px;
+      }
+      @include responsive-xs {
+        height: 60%;
+        width: 60%;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
