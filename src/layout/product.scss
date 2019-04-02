@@ -73,7 +73,7 @@
           padding: 0 50px;
 
           p {
-            font-size: 12px;
+            font-size: 14px;
           }
 
           @include responsive-xs {
@@ -86,7 +86,7 @@
           padding-right: 50px;
 
           p {
-            font-size: 12px;
+            font-size: 14px;
           }
 
           @include responsive-sm {
@@ -110,7 +110,7 @@
       justify-content: flex-end;
 
       button {
-        width: 160px;
+        width: 180px;
         padding-left: 10px;
 
         @include responsive-sm {

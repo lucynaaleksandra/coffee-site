@@ -1,8 +1,12 @@
-@import "./nav.scss";
-@import "./header.scss";
-@import "./about.scss";
-@import "./product.scss";
-@import "./service.scss";
-@import "./contact.scss";
-@import "./insta.scss";
-@import "./footer.scss";
+@import "./nav";
+@import "./header";
+@import "./about";
+@import "./product";
+@import "./service";
+@import "./contact";
+@import "./insta";
+@import "./footer";
+
+@import "./util/variables";
+@import "./util/animations";
+@import "./util/mediaq";
