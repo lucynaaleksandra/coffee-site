@@ -27,10 +27,12 @@ header {
     background: $color-dark-grey;
 
     @include responsive-sm {
+      padding: 50px;
       width: 100%;
       height: auto;
     }
     @include responsive-xs {
+      padding: 50px;
       width: 100%;
       height: auto;
     }
@@ -78,7 +80,7 @@ header {
     .la-header__img {
       width: 100%;
       height: 100%;
-      background-image: url("asset/coffee-sq1B.jpg");
+      background-image: url("asset/coffee-sq.jpg");
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;

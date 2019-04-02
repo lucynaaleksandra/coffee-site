@@ -23,7 +23,7 @@ $break-xl: 1824px;
 }
 
 @mixin responsive-xs {
-  @media (min-width: $break-xs) and (max-width: $break-sm) {
+  @media (min-width: 0) and (max-width: $break-sm) {
     @content;
   }
 }
