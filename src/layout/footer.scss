@@ -29,10 +29,26 @@ footer {
     justify-content: space-between;
     margin: 0 50px;
 
+    @include responsive-xs {
+      flex-direction: column;
+
+      .la-footer__rights {
+        text-align: center;
+      }
+    }
+
     .la-footer__social {
       a i {
         padding-left: 30px;
         font-size: 20px;
+
+        @include responsive-xs {
+          padding: 10px;
+        }
+      }
+
+      @include responsive-xs {
+        flex-direction: row;
       }
     }
   }

@@ -4,7 +4,7 @@
 
   @include responsive-xs {
     flex-direction: column;
-    margin: 50px;
+    margin: 50px 10px;
   }
 
   .la-service__img {
@@ -58,17 +58,17 @@
     padding: 50px 100px 50px 0;
     @include will-animate-y;
 
+    @include responsive-xs {
+      width: 100%;
+      padding: 25px;
+    }
+
     h2 {
       margin-bottom: 30px;
     }
 
     p {
       font-size: 14px;
-    }
-
-    @include responsive-xs {
-      width: 100%;
-      padding: 50px;
     }
 
     button {

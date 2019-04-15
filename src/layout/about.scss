@@ -2,11 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px 0;
+  padding: 100px 0;
 
   @include responsive-sm {
     flex-direction: column;
-    // margin: 100px 50px;
   }
   @include responsive-xs {
     flex-direction: column;
@@ -31,7 +30,7 @@
     }
     @include responsive-xs {
       width: 100%;
-      padding: 50px;
+      padding: 50px 25px;
     }
 
     .la-about__cta {

@@ -31,7 +31,8 @@
     animation: fade 2000ms $easeOutBack 900ms forwards;
 
     input {
-      padding: 10px;
+      padding: 10px 0;
+      // padding: 10px;
       margin: 10px 0;
       border: none;
       border-bottom: 1px solid $color-light-grey;
@@ -55,6 +56,12 @@
 
       i:nth-child(1) {
         margin-right: 15px;
+      }
+
+      @include responsive-xs {
+        i {
+          display: none;
+        }
       }
     }
 
